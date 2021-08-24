@@ -63,7 +63,7 @@ ul.nav {
     padding: 0;
 }
 .navbar-default .navbar-nav>li>a {
-    font-size: 24px;
+    font-size: 25px;
     color: #737373;
     text-transform: uppercase;
     transition: all .7s ease 0s;
@@ -175,7 +175,12 @@ li a.active {
 }
 
 /*about area*/
-
+.rows{
+    margin-top: 15%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    margin-left: 10%;
+}
 .about h2 {
     font-size: 90px;
     color: #42b3e5;
@@ -269,12 +274,12 @@ li a.active {
 .service {
     background: url(../img/pattern.jpg);
     background-repeat: repeat-y;
-    margin-top: 40px;
+    margin-top: 0px;
 }
 .service h2 {
-    font-size: 90px;
+    font-size: 80px;
     color: #fff;
-    margin-top: 70px;
+    margin-top: 60px;
     margin-bottom: 0;
 }
 .service h4 {
@@ -541,7 +546,7 @@ li a.active {
     width: 180px;
     height: 50px;
     float: right;
-    font-size: 24px;
+    font-size: 25px;
     color: #fff;
     background: url(../img/btn-bg.jpg);
     background-repeat: no-repeat;
@@ -888,3 +893,4 @@ responsive area
         font-size: 10px;
     }
 }
+

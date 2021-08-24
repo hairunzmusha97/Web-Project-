@@ -22,7 +22,7 @@
   <link rel="shortcut icon" href="admin/images/favicon.png" />
 </head>
 <body>
-  @include("admin.navbar");
+  @include("admin.navbar")
  
   <!-- container-scroller -->
 

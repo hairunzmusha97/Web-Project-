@@ -1,12 +1,16 @@
-    <div class="container-fluid page-body-wrapper">
+    
       <!-- partial:partials/_settings-panel.html -->
       <div class="theme-setting-wrapper">
         <div id="settings-trigger"><i class="typcn typcn-cog-outline"></i></div>
         <div id="theme-settings" class="settings-panel">
           <i class="settings-close typcn typcn-times"></i>
           <p class="settings-heading">SIDEBAR SKINS</p>
-          <div class="sidebar-bg-options selected" id="sidebar-light-theme"><div class="img-ss rounded-circle bg-light border mr-3"></div>Light</div>
-          <div class="sidebar-bg-options" id="sidebar-dark-theme"><div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark</div>
+          <div class="sidebar-bg-options selected" id="sidebar-light-theme">
+            <div class="img-ss rounded-circle bg-light border mr-3"></div>Light
+          </div>
+          <div class="sidebar-bg-options" id="sidebar-dark-theme">
+            <div class="img-ss rounded-circle bg-dark border mr-3"></div>Dark
+          </div>
           <p class="settings-heading mt-2">HEADER SKINS</p>
           <div class="color-tiles mx-0 px-4">
             <div class="tiles success"></div>
@@ -175,14 +179,20 @@
             <a class="nav-link" href="welcome.blade.php">
               <i class="typcn typcn-device-desktop menu-icon"></i>
               <span class="menu-title">Dashboard</span>
-              
+
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#form-elements" aria-expanded="false" aria-controls="form-elements">
+            <a class="nav-link" data-toggle="collapse" href="{{url('/users')}}" aria-expanded="false" aria-controls="auth">
+              <i class="typcn typcn-user-add-outline menu-icon"></i>
+              <span class="menu-title">User Pages</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="{{url('/messages')}}" aria-expanded="false" aria-controls="form-elements">
               <i class="typcn typcn-film menu-icon"></i>
-              <span class="menu-title">Patient Forms</span>
-              <i class="menu-arrow"></i>
+              <span class="menu-title">User Messages</span>
+
             </a>
             <div class="collapse" id="form-elements">
               <ul class="nav flex-column sub-menu">
@@ -194,7 +204,7 @@
             <a class="nav-link" data-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
               <i class="typcn typcn-chart-pie-outline menu-icon"></i>
               <span class="menu-title">Progress Charts</span>
-              <i class="menu-arrow"></i>
+
             </a>
             <div class="collapse" id="charts">
               <ul class="nav flex-column sub-menu">
@@ -206,7 +216,7 @@
             <a class="nav-link" data-toggle="collapse" href="#tables" aria-expanded="false" aria-controls="tables">
               <i class="typcn typcn-th-small-outline menu-icon"></i>
               <span class="menu-title">Statistic Tables</span>
-              <i class="menu-arrow"></i>
+
             </a>
             <div class="collapse" id="tables">
               <ul class="nav flex-column sub-menu">
@@ -214,19 +224,14 @@
               </ul>
             </div>
           </li>
-         
-          <li class="nav-item">
-            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-              <i class="typcn typcn-user-add-outline menu-icon"></i>
-              <span class="menu-title">User Pages</span>
-              <i class="menu-arrow"></i>
-            </a>
-            <div class="collapse" id="auth">
-              <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="admin/pages/samples/login.html"> Login </a></li>
-                <li class="nav-item"> <a class="nav-link" href="admin/pages/samples/register.html"> Register </a></li>
-              </ul>
-            </div>
+
+
+          <div class="collapse" id="auth">
+            <ul class="nav flex-column sub-menu">
+              <li class="nav-item"> <a class="nav-link" href="admin/pages/samples/login.html"> Login </a></li>
+              <li class="nav-item"> <a class="nav-link" href="admin/pages/samples/register.html"> Register </a></li>
+            </ul>
+          </div>
           </li>
           <!--li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#error" aria-expanded="false" aria-controls="error">
@@ -241,11 +246,11 @@
               </ul>
             </div>
           </li-->
-       
+
         </ul>
       </nav>
       <!-- apart from side bar-->
       <!-- main-panel ends -->
     </div>
     <!-- page-body-wrapper ends -->
-  </div>
+    </div>
